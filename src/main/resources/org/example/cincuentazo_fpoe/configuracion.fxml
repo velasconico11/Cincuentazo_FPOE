@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="24.0" styleClass="root-configuracion"
+      xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.cincuentazo_fpoe.controller.ConfiguracionController"
+      prefWidth="480.0" prefHeight="420.0">
+    <padding>
+        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+    </padding>
+
+    <Label styleClass="titulo" text="Cincuentazo" />
+    <Label styleClass="subtitulo" text="Selecciona cuantos jugadores maquina participaran" wrapText="true" />
+
+    <VBox alignment="CENTER_LEFT" spacing="12.0" styleClass="panel-opciones">
+        <fx:define>
+            <ToggleGroup fx:id="grupoMaquinas" />
+        </fx:define>
+        <RadioButton fx:id="radioUno" text="1 jugador maquina" toggleGroup="$grupoMaquinas" styleClass="radio-opcion" />
+        <RadioButton fx:id="radioDos" text="2 jugadores maquina" toggleGroup="$grupoMaquinas" styleClass="radio-opcion" />
+        <RadioButton fx:id="radioTres" text="3 jugadores maquina" toggleGroup="$grupoMaquinas" styleClass="radio-opcion" />
+    </VBox>
+
+    <Button onAction="#iniciarJuego" styleClass="boton-principal" text="Iniciar juego" />
+</VBox>

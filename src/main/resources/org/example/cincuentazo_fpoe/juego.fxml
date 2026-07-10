@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="640.0" prefWidth="960.0" styleClass="root-juego"
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.cincuentazo_fpoe.controller.ConfiguracionController">
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="30.0" styleClass="barra-superior" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="12.0" left="24.0" right="24.0" top="12.0" />
+            </padding>
+            <Label fx:id="lblTurno" styleClass="info-label" text="Turno de: -" />
+            <Label fx:id="lblSuma" styleClass="info-label" text="Suma actual: 0" />
+            <Label fx:id="lblCartaMesa" styleClass="info-label" text="Ultima carta: -" />
+            <Label fx:id="lblCartasMazo" styleClass="info-label" text="Cartas en el mazo: 0" />
+            <Label fx:id="lblTiempo" styleClass="info-label" text="Tiempo: 00:00" />
+        </HBox>
+    </top>
+
+    <left>
+        <VBox fx:id="vboxMaquinas" alignment="TOP_LEFT" spacing="14.0" styleClass="panel-maquinas"
+              BorderPane.alignment="TOP_LEFT" prefWidth="220.0">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox alignment="CENTER" spacing="18.0" styleClass="panel-mesa" BorderPane.alignment="CENTER">
+            <Label styleClass="titulo-mesa" text="Mesa" />
+            <Label fx:id="lblMesaVisual" styleClass="carta-mesa-visual" text="🂠" />
+        </VBox>
+    </center>
+
+    <bottom>
+        <VBox spacing="10.0" styleClass="panel-inferior" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="18.0" left="24.0" right="24.0" top="10.0" />
+            </padding>
+            <Label styleClass="subtitulo" text="Tu mano" />
+            <HBox fx:id="hboxMano" alignment="CENTER" spacing="12.0" styleClass="panel-mano" />
+            <TextArea fx:id="areaLog" editable="false" prefHeight="130.0" styleClass="log-area" />
+        </VBox>
+    </bottom>
+</BorderPane>
