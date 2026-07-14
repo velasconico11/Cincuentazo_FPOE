@@ -1,5 +1,7 @@
 package org.example.cincuentazo_fpoe.model;
 
+import org.example.cincuentazo_fpoe.exception.MazoVacioException;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;

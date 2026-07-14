@@ -1,5 +1,6 @@
 package org.example.cincuentazo_fpoe.controller;
 
+import org.example.cincuentazo_fpoe.model.Juego;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -7,7 +8,6 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.stage.Stage;
 
@@ -18,7 +18,7 @@ import java.io.IOException;
  * juego). Permite elegir con cuantos jugadores maquina (1, 2 o 3) se
  * jugara, y da paso a la pantalla principal del juego.
  *
- * @author Mini Proyecto 3 - Cincuentazo
+ * @author Nicolás Velasco
  */
 public class ConfiguracionController {
 
