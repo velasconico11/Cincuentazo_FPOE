@@ -7,7 +7,7 @@ import java.util.Objects;
  * {@link Rango} y un {@link Palo}. Es un objeto de valor (inmutable)
  * dentro de la capa Modelo del patron MVC.
  *
- * @author Nicolás Velasco
+ * @author Nicolás Velasco, Daniel Toro
  */
 
 public class Carta {
