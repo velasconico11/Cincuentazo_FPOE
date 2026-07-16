@@ -4,6 +4,7 @@ import org.example.cincuentazo_fpoe.exception.MazoVacioException;
 import org.example.cincuentazo_fpoe.model.Carta;
 import org.example.cincuentazo_fpoe.model.Juego;
 import org.junit.jupiter.api.Test;
+import org.example.cincuentazo_fpoe.model.Mazo;
 
 import java.util.ArrayList;
 import java.util.List;
