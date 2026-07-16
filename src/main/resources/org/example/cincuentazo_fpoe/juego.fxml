@@ -9,7 +9,7 @@
 
 <BorderPane prefHeight="640.0" prefWidth="960.0" styleClass="root-juego"
             xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="org.example.cincuentazo_fpoe.controller.ConfiguracionController">
+            fx:controller="org.example.cincuentazo_fpoe.controller.JuegoController">
 
     <top>
         <HBox alignment="CENTER_LEFT" spacing="30.0" styleClass="barra-superior" BorderPane.alignment="CENTER">

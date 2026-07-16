@@ -18,7 +18,7 @@ import java.io.IOException;
  * juego). Permite elegir con cuantos jugadores maquina (1, 2 o 3) se
  * jugara, y da paso a la pantalla principal del juego.
  *
- * @author Nicolás Velasco
+ * @author Nicolás Velasco, Daniel Toro
  */
 public class ConfiguracionController {
 
@@ -48,7 +48,7 @@ public class ConfiguracionController {
             juego.iniciarJuego();
 
             FXMLLoader loader = new FXMLLoader(
-                    getClass().getResource("/co/edu/univalle/cincuentazo/juego.fxml"));
+                    getClass().getResource("/org/example/cincuentazo_fpoe/juego.fxml"));
             Parent root = loader.load();
             JuegoController controller = loader.getController();
             controller.setJuego(juego);
@@ -56,7 +56,7 @@ public class ConfiguracionController {
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(root);
             scene.getStylesheets().add(
-                    getClass().getResource("/co/edu/univalle/cincuentazo/styles.css").toExternalForm());
+                    getClass().getResource("/org/example/cincuentazo_fpoe/styles.css").toExternalForm());
             stage.setScene(scene);
             stage.setTitle("Cincuentazo - En juego");
             stage.setResizable(false);
@@ -64,6 +64,8 @@ public class ConfiguracionController {
             mostrarError("No se pudo cargar la pantalla del juego: " + e.getMessage());
         } catch (IllegalArgumentException e) {
             mostrarError(e.getMessage());
+        } catch (RuntimeException e) {
+            mostrarError("Error inesperado: " + e.getMessage());
         }
     }
 
