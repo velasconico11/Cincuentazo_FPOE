@@ -44,7 +44,7 @@ public class JuegoController {
     @FXML
     private Label lblMesaVisual;
     @FXML
-    private VBox vboxMaquinas;
+    private HBox vboxMaquinas;
     @FXML
     private HBox hboxMano;
     @FXML
@@ -252,7 +252,7 @@ public class JuegoController {
                         ? jugador.getNombre() + ": eliminado"
                         : jugador.getNombre() + ": " + jugador.getMano().size() + " carta(s)";
                 Label lbl = new Label(estado);
-                lbl.getStyleClass().add("info-label");
+                lbl.getStyleClass().add("info-label-maquina");
                 vboxMaquinas.getChildren().add(lbl);
             }
         }

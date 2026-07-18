@@ -59,7 +59,7 @@ public class ConfiguracionController {
                     getClass().getResource("/org/example/cincuentazo_fpoe/styles.css").toExternalForm());
             stage.setScene(scene);
             stage.setTitle("Cincuentazo - En juego");
-            stage.setResizable(false);
+            stage.setResizable(true);
         } catch (IOException e) {
             mostrarError("No se pudo cargar la pantalla del juego: " + e.getMessage());
         } catch (IllegalArgumentException e) {

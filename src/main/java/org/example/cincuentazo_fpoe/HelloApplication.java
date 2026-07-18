@@ -22,7 +22,7 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load());
         scene.getStylesheets().add(
                 getClass().getResource("/org/example/cincuentazo_fpoe/styles.css").toExternalForm());
-        stage.setTitle("Cincuentazo");
+        stage.setTitle("Cincuentazo - Selecciona la cantidad de oponentes");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
