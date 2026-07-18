@@ -112,4 +112,5 @@ El proyecto sigue el patrón **MVC (Model-View-Controller)**:
 
 ## Licencia
 
-Proyecto académico - Universidad [Nombre de la Universidad]
+Proyecto académico - Universidad del Valle
+
